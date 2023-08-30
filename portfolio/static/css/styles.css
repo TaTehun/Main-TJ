@@ -44,3 +44,26 @@ body {
   padding: 0 1rem;
   line-height: 150%;
 }
+
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contact__details {
+  margin-left: 1ch;
+}
+
+.contact__link {
+  color: #000;
+  text-decoration: none;
+
+  box-shadow: 0 2px 0 0 #4cafda;
+}
+
+.contact__link:hover {
+  color: #4cafda;
+}
