@@ -3,19 +3,19 @@ from flask import Flask, render_template, abort
 app = Flask(__name__)
 projects = [
     {
-        "name": "Korean-Speaking Taxi Service Website",
-        "thumb": "img/tj.png",
-        "hero": "img/tj.png",
-        "categories": ["python", "web"],
-        "slug": "korean-taxi",
-        "prod": "https://familytaxidallas.com/",
-    },
-    {
-        "name": "Project2",
+        "name": "Project1",
         "thumb": "img/tj.png",
         "hero": "img/tj.png",
         "categories": ["react", "javascript"],
-        "slug": "2",
+        "slug": "movie-watchlist",
+    },
+    {
+        "name": "Korean-Speaking Taxi Service",
+        "thumb": "img/taxi.png",
+        "hero": "img/taxi.png",
+        "categories": ["python", "web"],
+        "slug": "korean-taxi",
+        "prod": "https://familytaxidallas.com/",
     },
     {
         "name": "Project3",
@@ -48,3 +48,7 @@ def project(slug):
     if slug not in slug_to_project:
         abort(404)
     return render_template(f"project_{slug}.html", project=slug_to_project[slug])
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template("404.html"), 404

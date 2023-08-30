@@ -228,6 +228,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   margin-right: 0.5rem;
+
   transform: translateY(2px);
 }
 
