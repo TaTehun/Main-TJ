@@ -10,6 +10,7 @@ html {
 
 body {
   margin-top: 80px;
+  margin-bottom: 100px;
 }
 
 .header {
@@ -139,6 +140,11 @@ body {
 .categories__tag:not(:last-of-type)::after {
   content: "|";
   margin: 0 0.25rem;
+}
+
+.about__image {
+  height: auto;  
+  margin-bottom: 30px; 
 }
 
 .hero {
