@@ -160,6 +160,10 @@ body {
   padding: 0 1rem;
 }
 
+.project__paragraph {
+  margin-bottom: 1.5rem;
+}
+
 .project__content {
   margin-bottom: 1rem;
   line-height: 150%;

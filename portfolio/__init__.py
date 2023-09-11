@@ -19,11 +19,12 @@ projects = [
         "gh": "https://github.com/TaTehun/Korean-Taxi-Web",
     },
     {
-        "name": "Project3",
-        "thumb": "img/tj.png",
-        "hero": "img/tj.png",
-        "categories": ["writing"],
-        "slug": "api-docs",
+        "name": "User-Email-Feedback application",
+        "thumb": "img/email.png",
+        "hero": "img/email.png",
+        "categories": ["Javascript", "react", "nodejs"],
+        "slug": "email-feedback",
+        "gh": "https://github.com/TaTehun/User-Email-Feedback"
     },
 ]
 
