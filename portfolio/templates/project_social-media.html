@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+    <main class="main main--project">
+        <div>
+            <img
+                class="hero"
+                src="{{ url_for('static', filename=project['hero']) }}"
+                alt="A graphical representation of the User-Email-Feedback application."
+            />
+
+            <article class="project">
+                <article class="project__content">
+                    <h2 class="project__heading">{{ project['name'] }}</h2>
+    
+                    <p>
+                        <p class="project__paragraph">The SocialMedia application is a full-featured social media platform currently under development, with an estimated completion date in December 2023.</p>
+                        <p class="project__paragraph">The application aims to offer a rich user experience, allowing users to create posts, follow other users, and interact through comments and likes.</p>
+                        <p class="project__paragraph">Key features planned include JWT-based authentication for secure user login and registration, the ability for users to create, edit, and delete posts, real-time messaging, and Redis API for caching.</p>
+                        <p class="project__paragraph">The application is being designed with scalability and user experience in mind, capable of handling a large number of users and posts while maintaining a user-friendly interface.</p>
+                    </p>
+                </article>
+    
+                <section>
+                    <article class="project__meta-group">
+                        <h3 class="project__heading project__heading--meta">Technologies used</h3>
+    
+                        <ul class="technology-list">
+                            <li class="technology-list__item">React.js</li>
+                            <li class="technology-list__item">Node.js</li>
+                            <li class="technology-list__item">Express.js</li>
+                            <li class="technology-list__item">MongoDB</li>
+                            <li class="technology-list__item">JWT Authentication</li>
+                        </ul>
+                    </article>
+    
+                    <a class="cta" href="{{ project['gh'] }}" style="margin-top: 1rem;">
+                        <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                        Github Repository
+                    </a>
+    
+                </section>
+            </article>
+        </div>
+    </main>    
+{% endblock %}

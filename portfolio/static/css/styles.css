@@ -108,6 +108,7 @@ body {
 
 .project-card__meta {
   padding: 0 1.25rem;
+  text-align: center;
 }
 
 .project-card__name {
@@ -127,8 +128,10 @@ body {
 
 .categories {
   display: flex;
+  justify-content: center;
+  align-items: center;  
   padding: 0;
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.5rem;
   color: #3d84a3;
   list-style: none;
   line-height: 1.45;
