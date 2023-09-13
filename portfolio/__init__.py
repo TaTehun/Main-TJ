@@ -3,13 +3,6 @@ from flask import Flask, render_template, abort
 app = Flask(__name__)
 projects = [
     {
-        "name": "Project1",
-        "thumb": "img/tj.png",
-        "hero": "img/tj.png",
-        "categories": ["Python", "Flask"],
-        "slug": "movie-watchlist",
-    },
-    {
         "name": "Korean-Speaking Taxi Service",
         "thumb": "img/taxi.png",
         "hero": "img/taxi.png",
@@ -19,12 +12,21 @@ projects = [
         "gh": "https://github.com/TaTehun/Korean-Taxi-Web",
     },
     {
-        "name": "Project3",
-        "thumb": "img/tj.png",
-        "hero": "img/tj.png",
-        "categories": ["writing"],
-        "slug": "api-docs",
+        "name": "User-Email-Feedback application",
+        "thumb": "img/email.png",
+        "hero": "img/email.png",
+        "categories": ["Javascript", "react", "nodejs"],
+        "slug": "email-feedback",
+        "gh": "https://github.com/TaTehun/User-Email-Feedback"
     },
+    {
+        "name": "Social-Media-platform",
+        "thumb": "img/social.png",
+        "hero": "img/social.png",
+        "categories": ["Typescript", "React", "NodeJS"],
+        "slug": "social-media",
+        "gh": "https://github.com/TaTehun/SocialMedia"
+    }
 ]
 
 slug_to_project = {project["slug"]: project for project in projects}
