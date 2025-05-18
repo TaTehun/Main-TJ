@@ -41,22 +41,23 @@
 
                 <section class="project__cta-group">
                     <!-- macOS Demo -->
-                    <a class="cta" href="{{ url_for('static', filename='videos/Starting_test_mac.mp4') }}" target="_blank">
+                    <a class="cta" href="{{ url_for('serve_video', filename='Starting_test_mac.mp4') }}" target="_blank">
                         <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
-                        Demo for macOS
+                        Demo for macOS (.mp4)
                     </a>
 
                     <!-- Windows Demo -->
-                    <a class="cta" href="{{ url_for('static', filename='videos/Starting_test_windows.mp4') }}" target="_blank" style="margin-top: 1rem;">
+                    <a class="cta" href="{{ url_for('serve_video', filename='Starting_test_windows.mp4') }}" target="_blank" style="margin-top: 1rem;">
                         <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
-                        Demo for Windows
+                        Demo for Windows (.mp4)
                     </a>
 
                     <!-- Table Control Demo -->
-                    <a class="cta" href="{{ url_for('static', filename='videos/table_control.mp4') }}" target="_blank" style="margin-top: 1rem;">
+                    <a class="cta" href="{{ url_for('serve_video', filename='table_control.mp4') }}" target="_blank" style="margin-top: 1rem;">
                         <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
-                        Demo - Table Control
+                        Demo - Table Control (.mp4)
                     </a>
+
 
                     <!-- GitHub Repo -->
                     <a class="cta" href="{{ project['gh'] }}" target="_blank" style="margin-top: 1rem;">
