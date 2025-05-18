@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 projects = [
     {
-        "name": "App Tester",
+        "name": "App Automation Tester",
         "thumb": "img/automation.png",
         "hero": "img/automation.png",
         "categories": ["Python", "PyQt5", "Automation"],
