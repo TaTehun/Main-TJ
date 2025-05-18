@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="main main--project">
+    <div>
+        <img
+            class="hero"
+            src="{{ url_for('static', filename=project['hero']) }}"
+            alt="App Installation Tester demo image"
+        />
+
+        <article class="project">
+            <article class="project__content">
+                <h2 class="project__heading">{{ project['name'] }}</h2>
+
+                <p>
+                    <p class="project__paragraph">
+                        App Installation Tester is a fully automated GUI-based tool to install and test Android apps
+                        across multiple devices simultaneously.
+                    </p>
+                    <p class="project__paragraph">
+                        It supports Google Play-based installation, automatic launch, dark/light mode toggling, multi-window testing,
+                        crash detection (via logcat), monkey UI interaction, and CSV-based tracking.
+                    </p>
+                    <p class="project__paragraph">
+                        Users can import and edit test app lists via a table editor, execute parallel tests, and export the full result report.
+                    </p>
+                </p>
+            </article>
+
+            <section>
+                <article class="project__meta-group">
+                    <h3 class="project__heading project__heading--meta">Technologies used</h3>
+                    <ul class="technology-list">
+                        <li class="technology-list__item">Python</li>
+                        <li class="technology-list__item">PyQt5</li>
+                        <li class="technology-list__item">pandas</li>
+                        <li class="technology-list__item">uiautomator2</li>
+                        <li class="technology-list__item">ADB</li>
+                    </ul>
+                </article>
+
+                <section class="project__cta-group">
+                    <!-- macOS Demo -->
+                    <a class="cta" href="{{ url_for('static', filename='videos/Starting_test_mac.mp4') }}" target="_blank">
+                        <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                        Demo for macOS
+                    </a>
+
+                    <!-- Windows Demo -->
+                    <a class="cta" href="{{ url_for('static', filename='videos/Starting_test_windows.mp4') }}" target="_blank" style="margin-top: 1rem;">
+                        <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                        Demo for Windows
+                    </a>
+
+                    <!-- Table Control Demo -->
+                    <a class="cta" href="{{ url_for('static', filename='videos/table_control.mp4') }}" target="_blank" style="margin-top: 1rem;">
+                        <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                        Demo - Table Control
+                    </a>
+
+                    <!-- GitHub Repo -->
+                    <a class="cta" href="{{ project['gh'] }}" target="_blank" style="margin-top: 1rem;">
+                        <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                        GitHub Repository
+                    </a>
+                </section>
+            </section>
+        </article>
+    </div>
+</main>
+{% endblock %}
